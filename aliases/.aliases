@@ -1,0 +1,181 @@
+#-----------------------------------------------------------------------------#
+# ALIASES                                                                     #
+#                                                                             #
+#                                                                             #
+#                                                                             #
+#-----------------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------------#
+# HOTSHORTS                                                                   #
+#-----------------------------------------------------------------------------#
+alias a='ack'
+alias b='cd -'
+alias c='cat'
+alias d='cd'
+alias e='$EDITOR'
+alias f='find'
+alias g='grep -in'
+alias h='history'
+alias k='kill'
+alias l='ls -l'
+alias o='open'
+alias o.='open .'
+alias q='exit'
+alias s='ls'
+alias t='top'
+alias v='vim'
+
+#-----------------------------------------------------------------------------#
+# SHORTCUTS                                                                   #
+#-----------------------------------------------------------------------------#
+alias - -='cd -'                                    # first dash is intentional
+alias ...='cd ../..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
+alias ..4='cd ../../../..'
+alias ..5='cd ../../../../..'
+alias ..6='cd ../../../../../..'
+
+# List direcory contents
+alias  ll='ls -l'
+alias  la='ls -la'
+alias  al='ls -la'
+
+alias ea='$EDITOR ~/.aliases'
+alias br='$EDITOR ~/.bashrc'
+alias ev='$EDITOR ~/.vimrc'
+
+alias bs='cd - && ls'
+alias pu='pushd'
+alias po='popd'
+
+alias mkd='mkdir'
+alias mkds='mkdir -p'
+
+# Misc
+alias serve='python -m SimpleHTTPServer'         # Serves the current directory
+alias rwc='find . -type f | xargs wc -l | sort'  # Recursive word count sorted
+alias showpath='echo $PATH | tr ":" "\n"' # Show Path
+
+#-----------------------------------------------------------------------------#
+# ZSH                                                                         #
+#-----------------------------------------------------------------------------#
+alias rzsh='source ~/.zshrc' # reload zsh
+
+#-----------------------------------------------------------------------------#
+# TMUX                                                                        #
+#-----------------------------------------------------------------------------#
+alias  tns='tmux new-session'
+alias tnss='tmux new-session -s'
+alias  tls='tmux list-sessions'
+alias  tas='tmux attach-session'
+alias tast='tmux attach-session -t'
+alias  trs='tmux rename-session'
+
+#-----------------------------------------------------------------------------#
+# VAGRANT                                                                     #
+#-----------------------------------------------------------------------------#
+alias    vinit='vagrant init'
+alias      vup='vagrant up'
+alias     vssh='vagrant ssh'
+alias    vhalt='vagrant halt'
+alias vdestroy='vagrant destroy'
+alias  vstatus='vagrant status'
+alias       vp='vagrant provision'
+alias       vr='vagrant reload'
+
+#-----------------------------------------------------------------------------#
+# GIT                                                                         #
+#-----------------------------------------------------------------------------#
+
+# Add
+alias gap='git add -p'
+
+# Branch
+alias   gb='git branch'             # List all Branches
+alias  gbm='git branch --merged'    # List all merged Branches
+alias gbnm='git branch --no-merged' # List all not merged Branches
+
+# Checkout
+alias gco='git checkout'
+alias gcom='git checkout master'
+alias gcod='git checkout development'
+alias gcob='git checkout -b'
+
+# Commit
+alias   gc='git commit'
+alias  gcm='git commit -m'
+alias  gca='git commit --amend'
+alias amend='git commit --amend'
+
+# Push
+alias  gpo='git push origin'
+alias gpom='git push origin master'
+alias gpod='git push origin development'
+
+# Diff
+alias gd='git diff'
+alias gds='git diff --staged'
+
+# Reset
+alias grh='git reset --hard'
+
+# Log
+alias gl='git log'
+alias gls="git log --graph --pretty=format:'%h - %d %s' --abbrev-commit"
+
+# Status
+alias gss='git status -s'
+alias gs='git status -s'
+
+alias  gpud='git pull upstream development'
+alias gprud='git pull --rebase upstream development'
+alias gprod='git pull --rebase origin development'
+
+#-----------------------------------------------------------------------------#
+# RUBY                                                                        #
+#-----------------------------------------------------------------------------#
+alias rv='ruby --version'
+
+#-----------------------------------------------------------------------------#
+# RAILS                                                                       #
+#-----------------------------------------------------------------------------#
+alias  rrs='rails server'
+alias  rrc='rails console'
+alias  rrg='rails generate'
+alias rrgc='rails generate controller'
+alias rrgm='rails generate model'
+
+#-----------------------------------------------------------------------------#
+# RAKE                                                                        #
+#-----------------------------------------------------------------------------#
+alias        rk='rake'
+alias       rks='rake stats'
+alias   rkstats='rake stats'
+alias       rkr='rake routes'
+alias  rkroutes='rake routes'
+alias       rkm='rake db:migrate'
+alias rkmigrate='rake db:migrate'
+alias    rkseed='rake db:seed'
+alias    rkdbtc='rake db:test:clone'
+
+#-----------------------------------------------------------------------------#
+# BUNDLER                                                                     #
+#-----------------------------------------------------------------------------#
+alias  be='bundle exec'
+alias bec='bundle exec cucumber'
+alias  bi='bundle install'
+
+#-----------------------------------------------------------------------------#
+# RAILS BEST PRACTICES                                                        #
+#-----------------------------------------------------------------------------#
+alias   rbp='rails_best_practices'
+alias  rbph='rails_best_practices --format html'
+
+#-----------------------------------------------------------------------------#
+# tmp                                                                         #
+#-----------------------------------------------------------------------------#
+alias tb='torquebox'
+alias cucu='cucumber'
+alias sha1sum='shasum'
+
