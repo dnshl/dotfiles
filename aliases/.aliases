@@ -14,7 +14,7 @@ alias c='cat'
 alias d='cd'
 alias e='$EDITOR'
 alias f='find'
-alias g='grep -in'
+alias g='git'
 alias h='history'
 alias k='kill'
 alias l='ls -l'
@@ -89,6 +89,7 @@ alias       vr='vagrant reload'
 #-----------------------------------------------------------------------------#
 
 # Add
+alias ga='git add'
 alias gap='git add -p'
 
 # Branch
