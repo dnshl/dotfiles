@@ -29,6 +29,7 @@ alias v='vim'
 # SHORTCUTS                                                                   #
 #-----------------------------------------------------------------------------#
 alias - -='cd -'                                    # first dash is intentional
+alias  ..='cd ..'
 alias ...='cd ../..'
 alias ..2='cd ../..'
 alias ..3='cd ../../..'
@@ -56,6 +57,12 @@ alias mkds='mkdir -p'
 alias serve='python -m SimpleHTTPServer'         # Serves the current directory
 alias rwc='find . -type f | xargs wc -l | sort'  # Recursive word count sorted
 alias showpath='echo $PATH | tr ":" "\n"' # Show Path
+
+#-----------------------------------------------------------------------------#
+# Finder                                                                      #
+#-----------------------------------------------------------------------------#
+alias show-files='defaults write com.apple.finder AppleShowAllFiles -boolean true  ; killall Finder'
+alias hide-files='defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder'
 
 #-----------------------------------------------------------------------------#
 # ZSH                                                                         #
