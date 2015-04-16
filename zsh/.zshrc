@@ -10,6 +10,6 @@ PATH="$HOME/.bin:$PATH"
 [[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"
 
 # Add go
-GOPATH="$HOME/go"
+export GOPATH="$HOME/go"
 PATH="$GOPATH/bin:$PATH"
 
