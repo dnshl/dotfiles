@@ -42,7 +42,8 @@ alias  ll='ls -l'
 alias  la='ls -la'
 alias  al='ls -la'
 
-alias ea='$EDITOR ~/.aliases'
+alias edit-aliases='$EDITOR ~/.aliases'
+alias ea='edit-aliases'
 alias br='$EDITOR ~/.bashrc'
 alias ev='$EDITOR ~/.vimrc'
 
@@ -67,7 +68,8 @@ alias hide-files='defaults write com.apple.finder AppleShowAllFiles -boolean fal
 #-----------------------------------------------------------------------------#
 # ZSH                                                                         #
 #-----------------------------------------------------------------------------#
-alias rzsh='source ~/.zshrc' # reload zsh
+alias reload-shell='source ~/.zshrc' # reload zsh
+alias rzsh='reload-shell'
 
 #-----------------------------------------------------------------------------#
 # TMUX                                                                        #
