@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+DELETE_LINKS=""
+
+DIRECTORIES=$(ls -d */)  # Path is not reliable?
+IGNORE_LIST="LICENSE|README.md"
+
+if [ "$1" = "-d" ] ; then
+    DELETE_LINKS="-D"
+fi
+
+stow \
+    $DELETE_LINKS \
+    --verbose \
+    --target ~ \
+    $DIRECTORIES \
+    --ignore $IGNORE_LIST
