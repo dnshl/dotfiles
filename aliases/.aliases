@@ -21,7 +21,7 @@ alias l='ls -l'
 alias o='open'
 alias o.='open .'
 alias q='exit'
-alias s='ls'
+alias s='sue'
 alias t='top'
 alias v='vim'
 
