@@ -20,6 +20,13 @@ defaults write com.apple.dock orientation "left"
 defaults write com.apple.dock autohide -bool true
 
 ###############################################################################
+# iterm2                                                                      #
+###############################################################################
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
