@@ -135,7 +135,7 @@ alias grh='git reset --hard'
 
 # Log
 alias gl='git log'
-alias gls="git log --graph --pretty=format:'%h - %d %s' --abbrev-commit"
+alias gls='git lg'
 
 # Status
 alias gss='git status -s'
