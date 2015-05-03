@@ -7,7 +7,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
-# Dock                                                                        #
+# Dock, hot corners                                                           #
 ###############################################################################
 
 # Set the icon size of Dock items to 36 pixels
@@ -18,6 +18,32 @@ defaults write com.apple.dock orientation "left"
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
+
+# Hot Corners
+# Possible values:
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+
+# Bottem left → Desktop
+defaults write com.apple.dock wvous-bl-corner -int 4
+defaults write com.apple.dock wvous-bl-modifier -int 0
+# Bottom right → Show application windows
+defaults write com.apple.dock wvous-br-corner -int 3
+defaults write com.apple.dock wvous-br-modifier -int 0
+# Top left → Start screen saver
+defaults write com.apple.dock wvous-tl-corner -int 5
+defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top right → Launchpad
+defaults write com.apple.dock wvous-tr-corner -int 11
+defaults write com.apple.dock wvous-tr-modifier -int 0
 
 ###############################################################################
 # iterm2                                                                      #
