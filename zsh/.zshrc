@@ -112,3 +112,5 @@ PATH="$GOPATH/bin:$PATH"
 
 # Add gvm
 [[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"
+# Add homebrew sbin path
+export PATH="/usr/local/sbin:$PATH"
