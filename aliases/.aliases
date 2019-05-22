@@ -37,8 +37,9 @@ alias ..4='cd ../../../..'
 alias ..5='cd ../../../../..'
 alias ..6='cd ../../../../../..'
 
-alias code='cd ~/code'
+alias code='cd ~/Code'
 alias dotfiles='cd ~/.dotfiles'
+alias devops='cd ~/Code/DevOps'
 
 # List direcory contents
 alias  ll='ls -l'
